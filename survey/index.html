@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main id="main">
+      <h1 id="title">Survey Form</h1>
+      <p id="description">A survey form for basic info about you</p>
+      <form id="survey-form">
+        <label for="name" id="name-label">Your name:</label>
+        <input id="name" required placeholder="Input your name"></input>
+        <br />
+        <label for="email" id="email-label">Your email:</label>
+        <input id="email" type="email" required placeholder="Input your email"></input>
+        <br/>
+        <label for="number" id="number-label">Your age:</label>
+        <input id="number" type="number" min=13 max=125 placeholder="Input your age (min. 13)"></input>
+        <br/>
+        <label for="interests" id="interests-label">Your interest:</label>
+        <select id="dropdown">
+          <option value="coding">Coding</option>
+          <option value="reading">Reading</option>
+          <option value="drawing">Drawing</option>
+        </select>
+        <br/>
+        <p>Select your favorite celebrity from the list:</p>
+        <input type="radio" id="leonardo" name="celeb" value="leonardo">
+        <label for="leonardo">Leonardo DiCaprio</label>
+        <input type="radio" id="beyonce" name="celeb" value="beyonce">
+        <label for="beyonce">Beyonce</label>
+        <input type="radio" id="harrison" name="celeb" value="harrison">
+        <label for="harrison">Harrison Ford</label>
+        <input type="radio" id="adele" name="celeb" value="adele">
+        <label for="adele">Adele</label>
+        <p>Select your favorite season(s) from the list:</p>
+        <input type="checkbox" id="fall" name="season" value="fall">
+        <label for="fall">Autumn</label>
+        <input type="checkbox" id="winter" name="season" value="winter">
+        <label for="winter">Winter</label>
+        <input type="checkbox" id="spring" name="season" value="spring">
+        <label for="spring">Spring</label>
+        <input type="checkbox" id="summer" name="season" value="summer">
+        <label for="summer">Summer</label>
+        <p>Any comments?</p>
+        <textarea></textarea>
+        <br/>
+        <button id="submit">Submit form</button>
+      </form>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
+
+

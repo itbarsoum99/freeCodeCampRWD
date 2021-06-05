@@ -43,12 +43,26 @@ nav {
 }
 
 input {
-  min-width: 170px;
   background-color: transparent;
   color: #353535;
   border: 2px solid #353535;
   padding: 2px;
   margin-bottom: 3px;
+}
+
+#email {
+  min-width: 170px;
+}
+
+#submit {
+  padding: 5px;
+}
+
+#video {
+  width: 70vw;
+  min-width: 300px;
+  height: auto;
+  min-height: 375px;
 }
 
 button {

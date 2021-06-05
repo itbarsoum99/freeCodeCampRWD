@@ -15,6 +15,7 @@
       <li><a href="#Links" class="nav-link">Links</a></li>
       <li><a href="#Images" class="nav-link">Images</a></li>
       <li><a href="#Lists" class="nav-link">Lists</a></li>
+      <li><a href="#Tables" class="nav-link">Tables</a></li>
       </ul>
     </nav>
     <main id="main-doc">
@@ -72,11 +73,11 @@
         </ul>
         <p>Unordered lists are created with the <code>&lt;ol&gt;</code> tag. Items within them are defined with the <code>&lt;li&gt;</code> tag. They look like this:</p>
         <code class="syn">&lt;ol&gt;
-            &lt;li&gt;The first item&lt;/li&gt;
-            &lt;li&gt;The second item&lt;/li&gt;
-            &lt;li&gt;The third item&lt;/li&gt;
-            &lt;li&gt;The fourth item&lt;/li&gt;
-            &lt;li&gt;The fifth item&lt;/li&gt;
+              &lt;li&gt;The first item&lt;/li&gt;
+              &lt;li&gt;The second item&lt;/li&gt;
+              &lt;li&gt;The third item&lt;/li&gt;
+              &lt;li&gt;The fourth item&lt;/li&gt;
+              &lt;li&gt;The fifth item&lt;/li&gt;
           &lt;/ol&gt;</code>
         <p>They render like this:</p>
         <ol>
@@ -87,6 +88,47 @@
           <li>The fifth item</li>
         </ol>
       </section>
+      <section class="main-section" id="Tables">
+        <header class="h2">Tables</header>
+        <p>Tables in HTML are created with the <code>&lt;table&gt;</code> tag. They contain a table head (<code>&lt;thead&gt;</code>) and a table body (<code>&lt;tbody&gt;</code>).</p>
+        <p>The <code>&lt;thead&gt;</code> and <code>&lt;tbody&gt;</code> contain <code>&lt;tr&gt;</code> elements that define a single row.
+        <p>The <code>&lt;thead&gt;</code> in turn contains <code>&lt;th&gt;</code> elements, which contain the content of a single table cell in the header of the table.</p>
+        <p>The <code>&lt;tbody&gt;</code> element itself contains <code>&lt;td&gt;</code> elements, which contain the content of a single table cell in the body of the table.</p>
+        <p>Tables look like this:</p>
+        <code class="syn">&lt;table&gt;
+           &lt;thead&gt;
+           &lt;tr&gt;
+             &lt;th&gt;Name&lt;/th&gt;
+             &lt;th&gt;Email&lt;/th&gt;
+             &lt;th&gt;Phone&lt;/th&gt;
+           &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Jane Doe&lt;/td&gt;
+              &lt;td&gt;jdoe@email.com&lt;/td&gt;
+              &lt;td&gt;555-555-5555&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;/tbody&gt;
+          &lt;/table&gt;
+        </code>
+        <p>They render like this:</p>
+        <table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Email</th>
+<th>Phone</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Jane Doe</td>
+<td>jdoe@email.com</td>
+<td>555-555-5555</td>
+</tr>
+</tbody>
+</table>
     </main>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>

@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: lightgrey;
   font-family: "Roboto", sans-serif;
@@ -28,8 +32,18 @@ p, a, li {
   font-weight: 400;
 }
 
-p {
+p, table {
   margin-left: 15px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td, th {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid black;
 }
 
 a:hover {

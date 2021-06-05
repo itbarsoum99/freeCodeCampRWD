@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: lightgrey;
+  font-family: "Roboto", sans-serif;
+  color: #353535;
+  margin: 0;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+h1 {
+  font-size: 65px;
+  font-weight: 700;
+  text-align: center;
+  margin-block-end: 0px;
+}
+
+h2 {
+  font-size: 38px;
+  font-weight: 700;
+  text-align: center;
+}
+
+
+h3 {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
+p, a, li {
+  font-weight: 400;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+#welcome-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #300;
+  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+
+#welcome-section h1 {
+  color: #be3144;
+}
+
+#welcome-section h2 {
+  color: lightgrey;
+  margin-block-start: 0px;
+  font-size: 48px;
+}
+
+
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+
+.project-tile {
+  background: #303841;
+  border-radius: 2px;
+  width: 28vw;
+  margin: auto;
+}
+
+.project-tile h3 {
+  color: lightgrey;
+  text-align: center;
+  text-decoration: none;
+  padding: 15px 0px 15px 0px;
+}
+
+.project-tile img {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+#contact {
+  padding-bottom: 20px;
+  background-color: #300;
+  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+  color: white;
+  padding-top: 25px;
+}
+
+#contact img {
+  display: block;
+  margin: auto;
+  height: 150px;
+  width: auto;
+}
+
+#navbar {
+  text-align: right;
+  background-color: #be3144;
+  color: white;
+  font-size: 20px;
+  padding: 15px;
+  position: fixed;
+  width: 100vw;
+}
+
+#contact-link {
+  padding-right: 30px;
+}
+
+#navbar a {
+  color: white;
+}
+
+@media (max-width: 750px) {
+  .project-tile {
+    width: 75vw;
+  }
+  #navbar {
+    text-align: right;
+  }
+}
+
+@media (max-width: 450px) {
+  #navbar {
+    text-align: center;
+  }
+}
+

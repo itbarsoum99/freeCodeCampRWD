@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Documentation</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header class="h1">HTML documentation</header>
+      <ul>
+      <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+      <li><a href="#Syntax" class="nav-link">Syntax</a></li>
+      <li><a href="#Paragraphs" class="nav-link">Paragraphs</a></li>
+      <li><a href="#Headings" class="nav-link">Headings</a></li>
+      <li><a href="#Links" class="nav-link">Links</a></li>
+      <li><a href="#Images" class="nav-link">Images</a></li>
+      <li><a href="#Lists" class="nav-link">Lists</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header class="h2">Introduction</header>
+        <p>HTML is the standard markup language for creating webpages.</p>
+        <p>HTML stands for Hyper Text Markup Language, and is the standard markup language for creating webpages. HTML describes the structure of a webpage, and consists of a series of elements. HTML elements tell the browser how to display the content. These elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.</p>
+      </section>
+      <section class="main-section" id="Syntax">
+        <header class="h2">Syntax</header>
+        <p>HTML syntax comes in an "elements" form, whereby the document is made up of several successive elements that are rendered by the browser.</p>
+        <code class="syn">&lt;tag&gt;content&lt;/tag&gt;</code>
+      <section class="main-section" id="Paragraphs">
+        <header class="h2">Paragraphs</header>
+        <p>You create paragraphs in HTML using the <code>&lt;p&gt;</code> element. This element is generally wrapped around plain text, like the main content of a page.</p>
+        <code class="syn">&lt;p&gt;A paragraph goes here.&lt;/p&gt;</code>
+        <p>The <code>&lt;p&gt;</code> element should not be used for anything but sentence- or paragraph- length text.</p>
+      </section>
+      <section class="main-section" id="Headings">
+        <header class="h2">Headings</header>
+        <p>Headings for content are created using the tags <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code>.</p>
+        <code class="syn">&lt;h1&gt;Main heading&lt;/h1&gt;</code>
+        <p>The larger the number, the larger the heading size. Headings should be used semantically, with only one <code>&lt;h1&gt;</code> per page and each smaller number nested within a heading one unit larger than it.</p>
+      </section>
+      <section class="main-section" id="Links">
+        <header class="h2">Links</header>
+        <p>Links are defined with the <code>&lt;a&gt;</code> tag and the <code>href</code> attribute.</p>
+        <code class="syn">&lt;a href="https://www.google.com"&gt;Google&lt;a&gt;</code>
+        <p>The <code>href</code> attribute contains the link, and the content section of the tag should contain the text to display.</p>
+      </section>
+      <section class="main-section" id="Images">
+        <header class="h2">Images</header>
+        <p>Images are used with the <code>&lt;img&gt;</code> tag and the <code>src</code> and <code>alt</code> attributes.</p>
+        <code class="syn">&lt;img src="https://i.imgur.com/img.png" alt="image"&gt;</syn></code>
+        <p>The <code>src</code> attribute contains a link to the image source. The <code>alt</code> attribute contains a short description of the image for screenreaders.</p>
+      </section>
+      <section class="main-section" id="Lists">
+        <header class="h2">Lists</header>
+        <p>Unordered lists are created with the <code>&lt;ul&gt;</code> tag. Items within them are defined with the <code>&lt;li&gt;</code> tag. 
+        <p>They look like this:</p>
+        <code class="syn">&lt;ul&gt;
+          &lt;li&gt;The first item&lt;/li&gt;
+          &lt;li&gt;The second item&lt;/li&gt;
+          &lt;li&gt;The third item&lt;/li&gt;
+          &lt;li&gt;The fourth item&lt;/li&gt;
+          &lt;li&gt;The fifth item&lt;/li&gt;
+          &lt;/ul&gt;</code>
+        <p>They render like this:</p>
+        <ul>
+          <li>The first item</li>
+          <li>The second item</li>
+          <li>The third item</li>
+          <li>The fourth item</li>
+          <li>The fifth item</li>
+        </ul>
+        <p>Unordered lists are created with the <code>&lt;ol&gt;</code> tag. Items within them are defined with the <code>&lt;li&gt;</code> tag. They look like this:</p>
+        <code class="syn">&lt;ol&gt;
+            &lt;li&gt;The first item&lt;/li&gt;
+            &lt;li&gt;The second item&lt;/li&gt;
+            &lt;li&gt;The third item&lt;/li&gt;
+            &lt;li&gt;The fourth item&lt;/li&gt;
+            &lt;li&gt;The fifth item&lt;/li&gt;
+          &lt;/ol&gt;</code>
+        <p>They render like this:</p>
+        <ol>
+          <li>The first item</li>
+          <li>The second item</li>
+          <li>The third item</li>
+          <li>The fourth item</li>
+          <li>The fifth item</li>
+        </ol>
+      </section>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>

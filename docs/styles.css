@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  background-color: lightgrey;
+  font-family: "Roboto", sans-serif;
+  color: #353535;
+  padding: 5vh 3vw 3vh 0vw;
+  margin-left: 0px;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.h1 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.h2 {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+p, a, li {
+  font-weight: 400;
+}
+
+p {
+  margin-left: 15px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+#navbar {
+  width: 20vw;
+  height: 100vh;
+  position: fixed;
+}
+
+#navbar a {
+  text-decoration: none;
+  display: block;
+  padding: 10px 30px;
+  color: #353535;
+  cursor: pointer;
+}
+
+#navbar ul {
+  height: 88%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#navbar header {
+  margin: 10px;
+}
+
+#navbar li {
+  color: #353535;
+  border-top: 1px solid;
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+
+.syn {
+  background-color: #c2c2c2;
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+#main-doc {
+  margin-left: 20vw;
+  padding-left: 3vh;
+}
+
+@media (max-width: 750px) {
+  #navbar {
+    width: 100vw;
+    height: 30vh;
+    position: relative;
+  }
+  #main-doc {
+    margin-left: 0vw;
+    padding-top: 5vh;
+  }
+}

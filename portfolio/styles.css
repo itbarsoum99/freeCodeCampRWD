@@ -13,6 +13,10 @@ body {
   scrollbar-width: none;
 }
 
+::selection {
+  background-color: transparent;
+}
+
 body::-webkit-scrollbar {
   display: none;
 }
@@ -83,6 +87,12 @@ a:hover {
   border-radius: 2px;
   width: 28vw;
   margin: auto;
+  transition: 0.2s;
+}
+
+.project-tile:hover {
+  transform: scale(1.05);
+  z-index: 1;
 }
 
 .project-tile h3 {
@@ -121,6 +131,7 @@ a:hover {
   padding: 15px;
   position: fixed;
   width: 100vw;
+  z-index:2;
 }
 
 #contact-link {

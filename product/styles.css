@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  background-color: lightgrey;
+  font-family: "Roboto", sans-serif;
+  color: #353535;
+  padding: 0vh 20vw 3vh 20vw;
+  margin-top: 0px;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  margin-block-start: 0.2em;
+}
+
+p, a, li {
+  font-weight: 400;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+hl {
+  background-color: #ffff0085;
+}
+
+#header-img {
+  width: 100px;
+  padding-top: 8vh;
+  display: block;
+  margin: auto;
+}
+
+nav {
+  position: fixed;
+  background-color: lightgrey;
+  padding: 3vh 0vh 3vh 0vh;
+  width: 100vw;
+}
+
+input {
+  min-width: 170px;
+  background-color: transparent;
+  color: #353535;
+  border: 2px solid #353535;
+  padding: 2px;
+  margin-bottom: 3px;
+}
+
+button {
+  background-color: transparent;
+  color: #353535;
+  border: 2px solid #353535;
+  padding: 2px;
+  transition: 0.2s;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #353535;
+  color: lightgrey;
+}
+
+input, button {
+  font-family: "Roboto", sans-serif;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-1, .flex-2, .flex-3 {
+  padding: 5px 15px 5px 15px;
+  border: 1px solid #353535;
+  margin: 5px;
+}
+
+
+@media (max-width: 500px) {
+  #header-img {
+    width: 50px;
+  }
+}
